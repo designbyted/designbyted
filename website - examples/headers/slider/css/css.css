@@ -1,0 +1,145 @@
+/*colour of outter background plus 20% lighter on expandable pages & toggle button*/
+/*colour of text*/
+/*nav color*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+#wrapper {
+  width: 100%;
+}
+
+.change {
+  display: none;
+}
+
+nav {
+  background-color: #643400;
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  margin: 0;
+}
+
+nav ul {
+  text-align: center;
+  position: relative;
+  list-style: none;
+  line-height: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav ul li {
+  display: inline-block;
+  color: blue;
+  background-color: #643400;
+  width: 100px;
+}
+
+nav ul li a {
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+  color: white;
+}
+
+nav ul li:hover > a {
+  background-color: #7e4100;
+  color: white;
+}
+
+.toggle {
+  display: none;
+  font-size: 25px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+
+hr {
+  width: 100%;
+  margin: 0 auto;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.75), transparent);
+}
+
+header {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+#sectionone {
+  height: 500px;
+  width: 100%;
+  background: white;
+}
+
+fieldset {
+  border: solid 1px #643400;
+  margin-top: 40px;
+  padding: 20px;
+  color: #643400;
+}
+
+#description {
+  padding: 5%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#description ul {
+  list-style: none;
+}
+
+#design {
+  text-align: center;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 70px;
+}
+
+#design p {
+  font-size: 8px;
+  font-family: 'Aladin', cursive;
+  line-height: 6px;
+  color: #643400;
+}
+
+#design a {
+  text-decoration: none;
+}
+
+.pipe {
+  width: 10px;
+  height: 10px;
+}
+
+@media (max-width: 320px) {
+  #wrapper {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .toggle {
+    display: block;
+  }
+  header {
+    height: 200px;
+    width: 100%;
+    padding-top: 0px;
+  }
+  #sectionone {
+    margin-top: 50px;
+    width: 100%;
+  }
+  #design {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=css.map */

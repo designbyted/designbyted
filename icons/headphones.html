@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="robots" content="noindex,nofollow">
+	<meta name="keywords" content=""/>
+	<meta name="description" content="">
+	<meta name="author" content="me"/>
+	<title>camera</title>
+<style>
+#wrapper	{
+	display: inline-block;
+	position: relative;
+	top: 50px;
+	left: 50%;
+	margin-left: -100px;
+}
+#head	{
+	position: relative;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	border-bottom: double 18px transparent;
+	border-top: solid 18px #727272;
+	border-right: double 18px #727272;
+	border-left: double 18px #727272;
+}
+#left	{
+	position: absolute;
+	top: 100px;
+	left: -20px;
+	height: 80px;
+  width: 40px;
+  border-radius: 100px 30px 30px 100px;
+  border-right: 20px solid #727272;
+  background: lightgray;
+  animation: beat 800ms  linear  infinite;
+/*     transform: rotate(-10deg); */
+}
+#right	{
+	position: absolute;
+	top: 100px;
+	left: 145px;
+	height: 80px;
+  width: 40px;
+  border-radius: 30px 100px 100px 30px;
+  border-left: 20px solid #727272;
+  background: lightgray;
+  animation: beat 800ms linear  infinite;
+/*     transform: rotate(10deg); */
+}
+
+@keyframes beat	 {
+	0%		{transform:scale(1);}			
+	100%		{transform:scale(1.02);}
+}
+</style>
+
+</head>
+
+<body>
+	
+	<div id="wrapper">
+		<div id="head"></div>
+		<div id="left"></div>
+	  <div id="right"></div>
+	</div>
+	     
+</body>
+    
+</html>

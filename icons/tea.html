@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="robots" content="noindex,nofollow">
+	<meta name="keywords" content=""/>
+	<meta name="description" content="">
+	<meta name="author" content="me"/>
+	<title>tea</title>
+<style>
+#teacup	{
+	position: relative;
+	top: 75px;
+	left: 50%;
+	margin-left: -65px;
+}
+#steam	{
+	position: absolute;
+	top: -46px;
+	left: 5px;
+	width: 100px;
+	height: 40px;
+	transform: rotate(180deg);
+}
+#steamr	{
+	 position: absolute;
+	 top: 0px;
+	 left: 25px;
+	 width: 4px;
+	 height: 6px;
+	 background: black;
+	 animation: steam 2s infinite 0.5s;
+ }
+#steamm	{
+	 position: absolute;
+	 top: 0px;
+	 left: 48px;	 
+	 width: 4px;
+	 height: 10px;
+	 background: black;
+	 animation: steam 2s infinite;
+ }
+#steaml	{
+	 position: absolute;
+	 top: 0px;
+	 left: 70px;	  
+	 width: 4px;
+	 height: 6px;
+	 background: black;
+   animation: steam 2s infinite 0.5s;
+ }
+ @keyframes steam{
+  0%{opacity:1; height: 2px;}
+  100%{opacity: 0; height: 30px;}
+}
+#cup	{
+	width: 100px;
+	height: 80px;
+	border-radius: 5px 5px 50px 50px;
+	border-top: 5px solid black;
+	border-right: 5px solid black;
+	border-bottom: 5px solid black;
+	border-left: 5px solid black;
+	overflow: hidden;
+}
+#tea	{
+	position: relative;
+	top: 15px;
+	left: 0px;
+	width: 100px;
+	height: 70px;
+	background: red;
+	border-radius: 0px 0px 70px 70px;
+	z-index: -99;
+	animation: tea 5s linear infinite;
+}
+@keyframes tea{
+  0% {height: 70px; margin-top: 0px;}
+  
+  100% {height: 0px; margin-top: 70px;}
+}
+#handlehide	{
+	position: absolute;
+	top: 10px;
+	left: 105px;
+	width: 50px;
+	height: 40px;
+	overflow: hidden;
+}
+#handle	{
+	position: relative;
+	top: 0px;
+	left: -16px;
+	width: 32px;
+	height: 30px;
+	border-radius: 40%;
+	border: 5px solid black;
+}
+#string	{
+	position: relative;
+	top: -90px;
+	left: 18px;
+	width: 0px;
+	height: 30px;
+	border: solid 2px black;
+}
+#bag	{
+	position: relative;
+	top: -100px;
+	left: 10px;
+	width: 15px;
+	height: 20px;
+	border: solid 3px black;
+	background: white;
+	border-radius: 5px;
+}
+#saucer	{
+	position: absolute;
+	top: 92px;
+	left: -10px;
+	width: 120px;
+	height: 5px;
+	border-radius: 20px 20px 20px 20px;
+	border: solid 5px black;
+}
+</style>
+
+</head>
+
+<body>
+	<div id="teacup">
+		<div id="steam">
+			<div id="steaml"></div>
+			<div id="steamm"></div>
+			<div id="steamr"></div>
+		</div>
+		<div id="cup">
+			<div id="tea"></div>
+		</div>
+		<div id="string"></div>
+		<div id="bag"></div>
+		<div id="handlehide">
+			<div id="handle"></div>
+		</div>
+	<div id="saucer"></div>		
+	</div>
+
+</body>
+    
+</html>
